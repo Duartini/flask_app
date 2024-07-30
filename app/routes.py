@@ -1,8 +1,7 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint
 
-main = Blueprint('main', name )
+main = Blueprint('main', __name__)
 
 @main.route('/')
-
 def index():
-  return jsonify({'message': 'Hello, World '})
+    return "Hello, World!"
